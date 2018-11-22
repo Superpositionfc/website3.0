@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
   html, body{
-      height: 1750px;
+      height: 3000px;
       background: linear-gradient(#ffedfd 0%, #e2f5ff 75%);
       background-size: cover;
       background-repeat: no-repeat;
@@ -91,7 +91,7 @@ background: linear-gradient(
 }
 
 #header {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
     color: rgba(0,0,0,.1);
     z-index: 2;
@@ -99,52 +99,55 @@ background: linear-gradient(
 
 
 #header .container{
-  width: 100vw;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 20%;
 }
-#header .centered{
+#header .container .centered{
     text-align: center;
     position: absolute;
-    top: 10vw;
-    left: 35%;
+    left: 36%;
     color: black;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 4em;
     font-weight: bold;
     flex-wrap: wrap;
 }
-#header .centered .date{
+#header .container .centered .date{
   font-family: 'Nanum Gothic', sans-serif;
   font-size: .5em;
   font-weight: lighter;
   color: #c6abc6;
   flex-wrap: wrap;
 }
-
 #faq {
+  display: block;
+  flex-wrap: wrap;
+  top: 100%;
+    color: rgba(0,0,0,.1);
+    z-index: 2;
   font-family: 'Nanum Gothic', sans-serif;
-  display: flex;
   height: auto;
-
-  align-items: center;
+  position: absolute;
   flex-wrap: wrap;
 }
 
 #faq .centered{
-  position: relative;
-    left: 50%;
-    top: 55vw;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  top: 1vw;
+    text-align: center;
     font-size: 3.2vw;
     font-weight: bolder;
     flex-wrap: wrap;
     color: #c6abc6;
 }
 #faq .text-block {
+  top: 10.5vw;
     position: absolute;
-    top: 58vw;
-    left: 9vw;
     width: 13vw;
+    left: 9vw;
     height: auto;
     font-size: 2vw;
     background-color: rgba(255, 255, 255, .5);
@@ -152,7 +155,9 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
 }
+
 
 #faq .text-block .answer {
   font-size: 1vw;
@@ -162,8 +167,8 @@ background: linear-gradient(
   flex-wrap: wrap;
 }
 #faq .text-block1 {
+  top: 10.5vw;
     position: absolute;
-    top: 58vw;
     left: 26vw;
     width: 13vw;
     height: auto;
@@ -173,6 +178,7 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 #faq .text-block1 .answer {
   font-size: 1vw;
@@ -183,8 +189,8 @@ background: linear-gradient(
 }
 
 #faq .text-block2 {
+  top: 10.5vw;
     position: absolute;
-    top: 58vw;
     left: 43vw;
     width: 13vw;
     height: auto;
@@ -194,6 +200,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block2 .answer {
   font-size: 1vw;
@@ -204,8 +212,8 @@ background: linear-gradient(
 }
 
 #faq .text-block3 {
+  top: 10.5vw;
     position: absolute;
-    top: 58vw;
     left: 60vw;
     width: 13vw;
     height: auto;
@@ -215,6 +223,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block3 .answer {
   font-size: 1vw;
@@ -225,8 +235,8 @@ background: linear-gradient(
 }
 
 #faq .text-block4 {
+  top: 10.5vw;
     position: absolute;
-    top: 58vw;
     left: 77vw;
     width: 13vw;
     height: auto;
@@ -236,6 +246,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block4 .answer {
   font-size: 1vw;
@@ -246,7 +258,7 @@ background: linear-gradient(
 }
 #faq .text-block5 {
     position: absolute;
-    top: 82vw;
+    top: 34.5vw;
     left: 9vw;
     width: 13vw;
     height: auto;
@@ -256,6 +268,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block5 .answer {
   font-size: 1vw;
@@ -267,7 +281,7 @@ background: linear-gradient(
 
 #faq .text-block6 {
     position: absolute;
-    top: 84.5vw;
+    top: 37vw;
     left: 26vw;
     width: 13vw;
     height: auto;
@@ -277,6 +291,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block6 .answer {
   font-size: 1vw;
@@ -288,7 +304,7 @@ background: linear-gradient(
 
 #faq .text-block7 {
     position: absolute;
-    top: 77.5vw;
+    top: 30vw;
     left: 43vw;
     width: 13vw;
     height: auto;
@@ -298,6 +314,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block7 .answer {
   font-size: 1vw;
@@ -309,7 +327,7 @@ background: linear-gradient(
 
 #faq .text-block8 {
     position: absolute;
-    top: 87vw;
+    top: 39.5vw;
     left: 60vw;
     width: 13vw;
     height: auto;
@@ -319,6 +337,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block8 .answer {
   font-size: 1vw;
@@ -329,7 +349,7 @@ background: linear-gradient(
 }
 #faq .text-block9 {
     position: absolute;
-    top: 85vw;
+    top: 37.5vw;
     left: 77vw;
     width: 13vw;
     height: auto;
@@ -339,6 +359,8 @@ background: linear-gradient(
     padding-left: 20px;
     padding-right: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 #faq .text-block9 .answer {
   font-size: 1vw;
@@ -347,6 +369,73 @@ background: linear-gradient(
   color: black;
   flex-wrap: wrap;
 }
+
+#team {
+  display: block;
+  flex-wrap: wrap;
+  top: 240%;
+  color: #c6abc6;
+    z-index: 2;
+  font-family: 'Nanum Gothic', sans-serif;
+  height: auto;
+  position: absolute;
+  flex-wrap: wrap;
+}
+#team .title{
+  left: 50%;
+  top: 3vw;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  color: #c6abc6;
+  margin-bottom: 20px;
+}
+
+#team .centered{
+  top: 1vw;
+    left: 50%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    flex-wrap: wrap;
+    color: #c6abc6;
+}
+    #team .teampic {
+      display: flex;
+      flex-wrap: wrap; }
+      #team .teampic .member {
+        flex: 21%;
+        width: 21%;
+        text-align: center;
+        margin-bottom: 20px; }
+        #team .teampic .member .name {
+          font-size: 1.2em; }
+        #team .teampic .member .crop {
+          width: 18vw;
+          max-width: 300px;
+          height: 18vw;
+          max-height: 300px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-bottom: 10px; }
+        #team .teampic .member .crop img {
+          width: 100%;
+          border-radius: 50%; } }
+      @media (max-width: 800px) {
+        #team .teampic .member {
+          flex: 27%;
+          width: 27%; }
+          #team .teampic .member .crop {
+            width: 25vw;
+            height: 25vw; }
+          #team .teampic .member .crop img {
+            min-width: 21vw;
+            min-height: 21vw; } }
 
 
 
