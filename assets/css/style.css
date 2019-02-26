@@ -27,6 +27,9 @@
 
 *{ margin: 0; padding: 0; }
 
+p {
+    font-size: 20px;
+}
 
 body {
   font-family: 'Nanum Gothic', sans-serif;
@@ -121,7 +124,7 @@ section {
   position: absolute;
   display: block;
   height: 100%;
-  top: 20%;
+  top: 15%;
 }
 #header .container div{
   display: block;
@@ -136,13 +139,25 @@ section {
   color: #c6abc6;
   margin-bottom: 20px;
 }
-#header .container .centered .date{
+#header .container .centered .date {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: .65em;
+  font-weight: lighter;
+  color: #895d89;
+  flex-wrap: wrap;
+  padding-top: 0.3em;
+    font-weight: bold;
+}
+
+#header .location {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: .5em;
   font-weight: lighter;
-  color: #c6abc6;
+  color: #ac86ac;
   flex-wrap: wrap;
+  padding-top: 0.5em;
 }
+
 #faq {
   top: 100%;
   flex-wrap: wrap;
@@ -164,23 +179,27 @@ section {
   font-size: 2.5em;
   font-weight: bolder;
   flex-wrap: wrap;
-  color: #c6abc6;
+  /*color: #c6abc6;*/
+  color: #ac86ac;
   margin-bottom: 20px;
+  font-weight: bold;
 }
-
 
 #faq .accordion {
     background-color: rgba(255,255,255,0);
     font-family: 'Nanum Gothic', sans-serif;
-    color: #ac86ac;
+    color: #c6abc6;
     cursor: pointer;
     padding: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 1.75em;
     transition: 0.4s;
+    font-weight: bold;
 }
 
 #faq .active, .accordion:hover {
@@ -209,19 +228,22 @@ section {
     font-size: 1em;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #team {
   top: 250%;
   height: 100vh;
   flex-wrap: wrap;
-  color: #c6abc6;
+  color: #ac86ac;
     z-index: 2;
   font-family: 'Nanum Gothic', sans-serif;
   height: auto;
   position: absolute;
   flex-wrap: wrap;
   display: flex;
+  font-weight: bold;
 }
 
 #team div{
@@ -234,7 +256,7 @@ section {
   font-size: 2.5em;
   font-weight: bolder;
   flex-wrap: wrap;
-  color: #c6abc6;
+  color: #ac86ac;
   margin-bottom: 20px;
 }
 
@@ -248,6 +270,7 @@ section {
     color: #c6abc6;
 }
     #team .teampic {
+      padding-top: 20px;
       display: flex;
       flex-wrap: wrap; }
       #team .teampic .member {
@@ -284,14 +307,15 @@ section {
             min-height: 21vw; } }
 
             #sponsors {
-              top: 420vh;
+              top: 400%;
               flex-wrap: wrap;
-              color: #c6abc6;
+              color: #ac86ac;
                 z-index: 2;
               font-family: 'Nanum Gothic', sans-serif;
               height: auto;
               position: absolute;
               flex-wrap: wrap;
+              font-weight: bold;
             }
 
             #sponsors div{
@@ -304,7 +328,7 @@ section {
               font-size: 2.5em;
               font-weight: bolder;
               flex-wrap: wrap;
-              color: #c6abc6;
+              color: #ac86ac;
               margin-bottom: 20px;
             }
             #sponsors .row {
