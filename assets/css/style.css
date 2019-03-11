@@ -158,6 +158,22 @@ section {
   padding-top: 0.5em;
 }
 
+.btn {
+  background-color: #c6abc6;
+  /*border-color: black;*/
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #ac86ac;
+}
+
 #faq {
   top: 100%;
   flex-wrap: wrap;
@@ -369,9 +385,6 @@ section {
                 width: 75% !important;
                 height: auto !important;
                 padding-bottom: 6vw; } }
-
-
-
 
 
 
