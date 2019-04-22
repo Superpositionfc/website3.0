@@ -1,11 +1,10 @@
-
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Annie Use Your Telescope");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Merienda");
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
   html, body{
-      height: 5000px;
+      height: 5500px;
       background: linear-gradient(#ffedfd 0%, #e2f5ff 75%);
       background-size: cover;
       background-repeat: no-repeat;
@@ -247,9 +246,62 @@ section {
     padding-left: 100px;
     padding-right: 100px;
 }
+#schedule {
+  top: 250%;
+  flex-wrap: wrap;
+    color: rgba(0,0,0,.1);
+    z-index: 2;
+  font-family: 'Nanum Gothic', sans-serif;
+  overflow: hidden;
+  position: absolute;
+  flex-wrap: wrap;
+  display
+} #schedule .title {
+    letter-spacing: 0.1em;
+    line-height: 1.75em;
+      font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 15px;
+    font-size: 34pt;
+    color: #895d89;
+} #schedule .dates {
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #895d89;
+} table {
+    font-family: 'Nanum Gothic', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+
+    #schedule .flex-box {
+    flex: 90%;
+    width: 70%;
+    margin: 28px;
+    padding: 15px;
+    box-shadow: 0 0 15px grey;
+    border-radius: 3px;
+  }
+    #schedule .flex-box .subtitle {
+      text-align: center;
+      font-size: 1.4em; }
+      #schedule tr > * {
+          padding: 0.4rem 0.6rem;
+            color: #ac86ac;
+      }
+td, th {
+    text-align: left;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
 
 #team {
-  top: 250%;
+  top: 450%;
   height: 100vh;
   flex-wrap: wrap;
   color: #ac86ac;
@@ -323,7 +375,7 @@ section {
             min-height: 21vw; } }
 
             #sponsors {
-              top: 420%;
+              top: 700%;
               flex-wrap: wrap;
               color: #ac86ac;
                 z-index: 2;
